@@ -1,0 +1,2 @@
+# MDT
+SAFTehnika Mājas uzdevums

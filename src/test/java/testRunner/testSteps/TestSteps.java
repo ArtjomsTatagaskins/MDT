@@ -48,7 +48,7 @@ public class TestSteps {
     }
 
     @When("A user enters {}, {} for login")
-    public void user_enters_data_for_registration(String username, String password) throws InterruptedException {
+    public void user_enters_data_for_login(String username, String password) throws InterruptedException {
         driver.get(baseURL);
 
         loginpage = new LoginPage(driver);
@@ -56,7 +56,7 @@ public class TestSteps {
     }
 
     @Then("A user successfully logged in as {}, {}")
-    public void user_is_registered(String username, String password) throws InterruptedException {
+    public void user_is_logged_in(String username, String password) throws InterruptedException {
         String expectedUrl = "https://www.saucedemo.com/inventory.html";
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
